@@ -2,8 +2,41 @@
 
 
 
-body{
-    background-color: #52527a;
-    color: #a3a3c2;
+*{
+    margin: 0;
+    padding: 0;
+}
 
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(37, 37, 37)
+}
+
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+
+.banner{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.banner h1{
+    color: #ffff;
+    
 }
