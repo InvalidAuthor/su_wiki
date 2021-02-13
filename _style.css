@@ -32,7 +32,7 @@ header{
 
 .banner{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 5%;
 }
 
@@ -42,23 +42,29 @@ header{
     font-weight: 200;
     font-family: "Josefin Sans", serif;
     text-shadow: .3rem .4rem 2px rgba(46, 46, 46, 0.4);
+    margin-bottom: 1.5rem;
 }
 
 
 .banner p{
     font-family: "Zilla Slab", sans-serif;
-    color: rgb(219, 196, 196);
+    color: #ffffff;
     font-size: 2.5rem;
     font-weight: 200;
     font-family: "Josefin Sans", serif;
-    text-shadow: .3rem .4rem 2px rgba(46, 46, 46, 0.4);
-}
-    
-.banner h2{
-    color: #ffff;
-    font-size: 4.5rem;
-    font-weight: 100;
-    font-family: "Josefin Sans", serif;
-    text-shadow: .3rem .4rem 2px rgba(46, 46, 46, 0.4);
+    text-shadow: .1rem .1rem 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 5rem;
 }
 
+.banner button{
+    font-family: "Josefin Sans", serif;
+    color: #ffffff;
+    letter-spacing: .2;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: #FF416C; 
+    border: none;
+    border-radius: 4px;
+    padding: 1rem 3rem;
+
+}
