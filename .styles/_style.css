@@ -35,7 +35,7 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-    animation: zoom 10s;
+    animation: zoom 5s;
 }
 
 
@@ -52,7 +52,7 @@ header{
     font-family: "Josefin Sans", serif;
     text-shadow: .3rem .4rem 2px rgba(46, 46, 46, 0.4);
     margin-bottom: 1.5rem;
-    animation: rotate 2s;
+    animation: rotate 1.9s;
 }
 
 
@@ -62,29 +62,70 @@ header{
     font-size: 2.5rem;
     font-weight: 200;
     text-shadow: .1rem .1rem 5px rgba(0, 0, 0, 0.4);
-    margin-bottom: 15rem;
-    animation: rotate 3s;
+    margin-bottom: 13rem;
+    animation: rotate 2.5s;
 }
 
-.banner button{
+@keyframes buttonAnim{
+    0%{
+        transform: translateX(1.5rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(70rem);
+        opacity: 100;
+    }
+}
+
+
+.btns{
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+
+
+.btns button{
     font-family: "Josefin Sans", serif;
     color: #ffffff;
-    letter-spacing: .4;
+    letter-spacing: none;
     font-size: 1.5rem;
     text-transform: uppercase;
     background: #cea458;
     border: none;
+    transform: translateX(70rem);
     border-radius: 4px;
     padding: 1rem 3rem;
     cursor: pointer;
     animation: rotate 3.5s;
+    margin-bottom: 1.5rem;
+    animation: buttonAnim 2s;
 }
 
-.banner button:hover{
+.btns button:hover{
     opacity: 0.9;
     color: #000;
     border: 3px;
 }
+
+.btns game{
+    font-family: "Josefin Sans", serif;
+    color: #ffffff;
+    letter-spacing: .8;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: #cea458;
+    border: none;
+    border-radius: 4px;
+    transform: translateX(5rem);
+    padding: 1rem 5rem;
+    cursor: pointer;
+    animation: rotate 3.5s;
+}
+
+
+
+
 
 @keyframes rotate{
     0%{

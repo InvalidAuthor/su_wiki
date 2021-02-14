@@ -1,11 +1,14 @@
 function validated()
 {
-    var user = document.getElementsByTagName("email");
-    var pass = document.getElementsByTagName("password");
+    var user = document.getElementsByClassName("email")
+    var pass = document.getElementsByClassName("password")
+
 
 if(user == "su_admin@wiki.com" && pass == "adminroot"){
 
     alert("Hello Fellow Admin/Trello Staff")
-    return false;
+}
+else{
+    alert("Wrong password please leave")
 }
 }
